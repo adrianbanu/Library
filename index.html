@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="library.css">
+  
+  <title>Library</title>
+</head>
+<body >
+  
+<header>
+  <h1>PROJECT: LIBRARY</h1>
+</header>
+
+  <main>
+    <section id="form-section">
+      <div id="button-form">
+        <button type="button" id="showForm">NEW BOOK</button>
+      </div>
+      <form id="book-form">
+        <label>Title</label><br>
+        <input type="text" id="form-title"><br><br>
+        <label>Author</label><br>
+        <input type="text" id="form-author"><br><br>
+        <label>Number of pages</label><br>
+        <input type="text" id="form-pages"><br><br>
+        <label>Status</label><br>
+        <select id="form-status">
+          <option value="Read">Read</option>
+          <option selected value="Not read">Not read</option>
+        </select><br><br><br>
+        <button type="button" id="addBook">Add book to library</button>
+        <button type="button" id="cancelBook">Cancel</button>
+      </form>
+      <label id="bookNumber"></label><br>
+    </section>
+    <section id="library">
+      <table id="library-content">
+        <thead>
+          <tr id="library-header">
+            <th id="table-author">Author</th>
+            <th id="table-title">Title</th>
+            <th id="table-pages">Pages</th>
+            <th id="table-status">Status</th>
+            <th id="table-delete">Delete book</th>
+          </tr>
+          <tbody id="library-books"></tbody>
+        </thead>
+      </table>
+    </section>
+  </main>
+
+  <script src="library.js"></script>
+</body>
+</html>
